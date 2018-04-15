@@ -6,8 +6,8 @@
   "scripts": {
     "test": "./node_modules/.bin/jest",
     "build": "./node_modules/.bin/webpack",
-    "watch:server": "./node_modules/.bin/nodemon -e ts,tsx,js --watch src index.js",
-    "start": "node index.js"
+    "watch:server": "./node_modules/.bin/nodemon -e ts,tsx,js --watch src index.js && echo Please open 'http://localhost:8080'",
+    "start": "node index.js && echo Please open 'http://localhost:8080'"
   },
   "jest": {
     "setupFiles": [
